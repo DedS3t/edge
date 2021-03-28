@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a6ee2a89b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    *,body,html{
+        padding:0;
+        margin:0;
+    }
+
+    body,html{
+        height:100%;
+        width:100%;
+    }
+
+    .download{
+        width: 300px;
+        font-size: 1.5rem;
+    }
+
+    .content{
+        width:100%;
+        height:100%;
+    }
+
+    .top{
+        width:100%;
+        height:80%;
+        padding-left:3rem;
+        padding-right:3rem;
+        margin-top:1rem;
+
+    }
+
+    .topContent{
+        position: absolute;
+        left:50%;
+        top:40%;
+        transform: translate(-50%,-50%);
+    }
+
+    .title h1{
+        font-size:5rem;
+        color:#4B91C9;
+    }
+
+    .info h2{
+        font-size:1.5rem;
+    }
+
+    .title{
+        margin-bottom: 1rem;
+    }
+
+    .info button{
+        margin-top:1rem;
+        padding:20px 30px;
+        background-color:#1D80AB;
+        color:white;
+        border:1px solid #1D80AB;
+        border-radius: 50px;
+    }
+
+    .fab fa-windows{
+        width:2rem !important;
+        height: 2rem !important;
+    }
+
+        .bottom h2 span{
+            margin-left:2rem;
+            font-size:4rem;
+        }
+         
+        @media only screen and (max-width: 1000px){
+            .bottom h2 span{
+                font-size:2rem;
+                margin-left:1.5rem;
+            }
+        }
+        
+        @media only screen and (max-width: 780px){
+            .bottom h2{
+                width:100%;
+                text-align:center;
+            }
+        }
+        
+        @media only screen and (max-width: 500px){
+            .title h1{
+                font-size:3rem;
+                .info h2{
+                    font-size:1.5rem;
+                }
+            }
+        }
+
+        .buttonDownload{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+   <div style="display: none;"class="content container">
+        <div class="top">
+            <div class="topContent">
+            <div class="title">
+                <h1>Edge</h1>
+            </div>
+
+            <div class="info">
+                <h2>High-throughput P2P Edge Computing Network</h2>
+                <div style="margin-top: 2rem;">
+                    <a class="text-xl bg-blue-200 p-2 m-4 buttonDownload" style="margin-left: 55%; filter: drop-shadow(0 0 0.75rem purple); background-image: linear-gradient(to right, mediumpurple, dodgerblue);" href="https://drive.google.com/drive/folders/1l8cBGdyuvEXP6S6NyWYbyzQjjE4waS-O?usp=sharing">Download CLI App</a>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+        <div class="bottom">
+            <h2 style="float:left;">Available on: <span ><i class="fab fa-linux"></i> <i class="fab fa-apple"></i></span></h2>
+
+            <h2 style="float:right;">Available for: <span ><i class="fab fa-python"></i> </span></h2>
+        </div>
+
+  
+
+
+   </div>
+   
+   <script>
+       $(()=>{
+           $(".content").fadeIn(1000);
+       })
+
+   </script>
+</body>
+</html>

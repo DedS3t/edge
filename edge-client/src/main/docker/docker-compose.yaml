@@ -1,0 +1,4 @@
+services:
+  src:
+    build: .
+    container_name: tempname
